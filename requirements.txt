@@ -2,3 +2,5 @@ torch
 torchvision
 gradio
 Pillow
+fastapi
+uvicorn
