@@ -99,7 +99,7 @@ The model can detect **38 different plant conditions** across multiple crop cate
 
    ```bash
    git clone https://github.com/ayusingh-54/plant-disease-detection-.git
-   cd plant-disease-detection-/backend
+   cd plant-disease-detection-
    ```
 
 2. **Install dependencies**:
@@ -109,7 +109,7 @@ The model can detect **38 different plant conditions** across multiple crop cate
    ```
 
 3. **Ensure model file exists**:
-   Make sure `plantDiseaseDetection.pth` is present in the backend directory.
+   Make sure `plantDiseaseDetection.pth` is present in the project directory.
 
 ### Running the Application
 
@@ -191,12 +191,13 @@ model.eval()
 ## 📁 File Structure
 
 ```
-backend/
+plant-disease-detection-/
 ├── app.py                      # Gradio interface
 ├── main.py                     # FastAPI server
 ├── model.py                    # Model architecture
 ├── plantDiseaseDetection.pth   # Trained model weights
 ├── requirements.txt            # Python dependencies
+├── .gitignore                  # Git ignore file
 └── README.md                   # This file
 ```
 
@@ -287,7 +288,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Model Loading Issues
 
 - **Problem**: `FileNotFoundError: plantDiseaseDetection.pth`
-- **Solution**: Ensure the model file exists in the backend directory
+- **Solution**: Ensure the model file exists in the project directory
 
 ### CUDA/GPU Issues
 
@@ -344,56 +345,4 @@ _KisanMitra - Empowering farmers with AI-driven plant disease detection_
 [![GitHub forks](https://img.shields.io/github/forks/ayusingh-54/plant-disease-detection-.svg?style=social&label=Fork)](https://github.com/ayusingh-54/plant-disease-detection-)
 
 </div>
-```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📄 License
-
-[Add your license information here]
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-1. **Model file not found**: Ensure `plantDiseaseDetection.pth` exists in the backend directory
-2. **CUDA errors**: The model is set to load on CPU by default
-3. **Import errors**: Check that all dependencies from `requirements.txt` are installed
-4. **Port conflicts**: Default ports are 7860 (Gradio) and 8000 (FastAPI)
-
-### Debug Mode
-
-To run with debug information:
-
-```python
-# Add to your Python files
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
-
-## 📞 Support
-
-For issues and questions:
-
-- Check the troubleshooting section above
-- Review the model architecture in `model.py`
-- Ensure all dependencies are correctly installed
-
-Built with ❤️ using PyTorch, Gradio, and FastAPI
-
-## 👨‍💻 Developer
-
-**Ayushi** - Lead Developer and Creator of KisanMitra
-
----
-
-_KisanMitra - Empowering farmers with AI-driven plant disease detection_
-#   p l a n t - d i s e a s e - d e t e c t i o n - 
- 
- 
